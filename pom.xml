@@ -31,6 +31,9 @@
 		<poi-ooxml-schemas.version>3.14-beta1</poi-ooxml-schemas.version>
 		<poi.version>3.14-beta1</poi.version>
 		<solrj.version>4.10.3</solrj.version>
+		<pdfbox.version>2.0.19</pdfbox.version>
+		<javafx-controls.version>11</javafx-controls.version>
+		<javafx-fxml.version>11</javafx-fxml.version>
 	</properties>
 	<!-- 只定义依赖的版本，并不实际依赖 -->
 	<dependencyManagement>
@@ -194,7 +197,23 @@
 			    <version>${poi.version}</version>
 			</dependency>
 			
-
+			<!--PDF插件-->
+			<dependency>
+			    <groupId>org.apache.pdfbox</groupId>
+			    <artifactId>pdfbox</artifactId>
+			    <version>${pdfbox.version}</version>
+			</dependency>
+			<!-- JavaFX11 -->
+			<dependency>
+ 				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-controls</artifactId>
+			  <version>${javafx-controls.version}</version>
+			</dependency>
+			<dependency>
+			  <groupId>org.openjfx</groupId>
+			  <artifactId>javafx-fxml</artifactId>
+			  <version>${javafx-fxml.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>
@@ -215,8 +234,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.2</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
