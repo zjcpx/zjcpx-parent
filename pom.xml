@@ -31,7 +31,7 @@
 		<poi-ooxml-schemas.version>3.14-beta1</poi-ooxml-schemas.version>
 		<poi.version>3.14-beta1</poi.version>
 		<solrj.version>4.10.3</solrj.version>
-		<pdfbox.version>2.0.19</pdfbox.version>
+		<pdfbox.version>2.0.24</pdfbox.version>
 		<javafx-controls.version>11</javafx-controls.version>
 		<javafx-fxml.version>11</javafx-fxml.version>
 	</properties>
